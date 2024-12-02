@@ -2,11 +2,19 @@
     font-family: LogoFont;
     src: url(../Fonts/apayah-loe.regular.ttf);
 }
+@font-face{
+    font-family:  BublleFont;
+    src: url(../Fonts/Eracake.otf);  
+}
+
 
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body ::-webkit-scrollbar{
+    display: none;
+}
 body{
     display: flex;
     flex-flow: column wrap;
@@ -15,8 +23,20 @@ body{
     min-height: 100vh;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 main{
     flex: 1 1 0;
+}
+
+.sectionTitle{
+    font-family: BublleFont;
+    margin-top: 15%;
+    flex: 100%;
+    text-align: center;
+    font-size: 40px;
 }
 
 /*========================================================================================================================================
@@ -31,7 +51,7 @@ nav{
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
-    z-index: 1;
+    z-index: 2;
     background-color: white;
 }
 
@@ -41,7 +61,7 @@ nav{
     flex: 80%;
 }
 .nav-links a{
-    color: black; text-decoration: none;
+    text-decoration: none;
     font-size: 25px;
 }
 .nav-links a:hover{
@@ -53,11 +73,11 @@ nav{
     background-color: #1780c3;
     padding: 10px;
     border-radius: 10px;
+    color: white;
 }
 .nav-links-login:hover{
     background-color: #95cff1;
     padding: 15px;
-    color: white;
 }
 
 /*Maneu de navegação - Logo*/
@@ -73,7 +93,7 @@ nav{
     color: #1780c3;
     margin-left: 20px;
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 1000px){
     nav{
         padding-bottom: 10px;
     }
@@ -85,9 +105,16 @@ nav{
         margin: 10px;
         font-size: 15px;
     }
+    .nav-links-login{
+        padding: 5px;
+    }
+    .nav-links-login:hover{
+        padding: 7px;
+    }
     .nav-logo p{
         margin: 0;
         margin-top: 10px;
+        font-size: 30px;
     }
 }
 /*========================================================================================================================================*/
@@ -95,11 +122,11 @@ nav{
 Cabeçalho e título*/
 
 header{
-    padding-top: 200px; padding-bottom: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
+    height: 100vh;
 }
 
 /*Cabeçalho e título - Texto de título*/
@@ -108,11 +135,11 @@ header{
     text-align: center;
 }
 .header-title h1{
+    font-family: BublleFont;
     font-size: 70px;
-    margin: 0;
     width: 50%; margin-left: 25%;
     color: #1780c3;
-    text-shadow: #2e2948 0px 10px 20px, #2e2948 0px 6px 6px;
+    text-shadow: #2e2948 0px 10px 5px, #2e2948 0px 6px 6px;
 }
 .header-title p{
     color: gray;
@@ -126,6 +153,7 @@ header{
     color: white;
     text-decoration: none;
     border-radius: 10px;
+    z-index: 1;
 }
 .header-title a:hover{
     padding: 25px;
@@ -143,12 +171,15 @@ header{
     z-index: 0;
 }
 
-@media screen and (max-width: 550px){
-    header{
-        margin-top: 100px;
+@media screen and (max-width: 1000px){
+    .header-title h1{
+        font-size: 50px;
     }
     .header-ilustration, .header-title{
         flex: 100%;
+    }
+    .header-ilustration{
+        margin-top: 20%;
     }
 }
 /*========================================================================================================================================*/
@@ -157,50 +188,50 @@ Seção 1: Cards*/
 
 .cards{
     display: flex;
-    justify-content:center;
-    align-items: center;
     flex-flow: row wrap;
-    overflow: auto;
-    color: gray;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    color: #242649;
 }
-
 .cards-cardIten{
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    border: #210d1f solid 3px;
+    width: 500px;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     text-align: center;
-    margin: 35px;
+    margin: 40px;
 }
-.cards-cardIten h2{
-    font-size: 30px;
-}
-.cards-cardIten p{
-    font-size: 20px;
-    max-width: 250px;
+.cards-cardIten-NoHover img{
+    margin-top: 5%;
+    width: 90%;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.cards-cardIten:hover .cards-cardIten-Hover{
-    display: block;
-}
+
 .cards-cardIten:hover .cards-cardIten-NoHover{
     display: none;
 }
+.cards-cardIten:hover .cards-cardIten-Hover{
+    display: block;
+}
 .cards-cardIten-Hover{
-    background-color: #ed3773;
+    height: 400px;
     display: none;
-    color: white;
 }
+
 .cards-cardIten-Hover p{
-    margin: 0;
-    padding: 5px;
+    font-size: 20px;
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 780px){
     .cards-cardIten{
         flex: 100%;
     }
 }
 
-
+/*========================================================================================================================================*/
+/*========================================================================================================================================
+Rodapé*/
 footer{
     bottom: 0;
     width: 100%;
@@ -221,7 +252,7 @@ footer h3{
     color: white;
     font-size: 30px;
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 780px){
     footer h2{
         font-size: 40px;
     }
@@ -230,7 +261,7 @@ footer h3{
     }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 780px){
     footer h2{
         font-size: 40px;
     }
@@ -238,3 +269,4 @@ footer h3{
         font-size: 20px;
     }
 }
+/*========================================================================================================================================*/

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>Site teste</title>
     <link rel="stylesheet" href="CSS/maisStyle.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -11,11 +11,11 @@
 <body>
     <nav>
         <div class="nav-logo">
-            <p>Logo Teste</p>
+            <p>Fic/Travel</p>
         </div>
 
         <div class="nav-links">
-            <a href="index.html" style="margin: 20px;">Página principal</a>
+            <a href="index.html" style="margin: 20px; color: black;">Página principal</a>
             <a href="login.html" class="nav-links-login">Entrar</a>
         </div>
     </nav>
@@ -23,9 +23,10 @@
     <main>
         <header>
             <div class="header-title">
-                <h1>Título do site Teste</h1>
-                <p>Descrição do site teste:Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima architecto commodi deserunt aliquid ipsa dolorem nihil voluptatibus minus voluptatem at tempore dignissimos, eius iure? Exercitationem delectus nihil autem dicta asperiores.</p> <br>
-                <b><a href="#">Botão Teste</a></b>
+                <h1>A melhor agencia de viagens</h1>
+                <p><b>Fic/Travel</b> é o seu portal para explorar o mundo! Oferecemos pacotes personalizados, dicas de viagem e guias detalhados para destinos exóticos. Planeje suas férias dos sonhos com facilidade e confiança. <b>Viaje mais, preocupe-se menos!</b>
+                </p> <br>
+                <b><a href="#packages">Ver pacotes de viagem</a></b>
             </div>
     
             <div class="header-ilustration">
@@ -33,42 +34,73 @@
             </div>
         </header>
     
-        <section>
-            <h2 style="text-align: center; font-size: 40px;">Cards de exemplo</h2>
-            <section class="cards">
-                <div class="cards-cardIten" data-aos="flip-left">
-                    <div class="cards-cardIten-NoHover animate__animated animate__fadeIn">
-                        <h2>Título do card</h2>
-                        <p>Aqui vai a descrição do nosso card</p>
-                    </div>
-                    <div class="cards-cardIten-Hover animate__animated animate__fadeIn">
-                        <p>Agora, aqui tem um aprofundamento maior sobre o conteúdo do nosso card. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero. Quaerat distinctio, odit ratione cupiditate hic debitis officia.</p>
-                    </div>
+        <section class="cards">
+            <h2 class="sectionTitle" id="packages">Viagens mais buscadas</h2>
+            <div class="cards-cardIten" data-aos="flip-down">
+                <div class="cards-cardIten-NoHover animate__animated animate__fadeIn">
+                    <img src="https://cdn2.civitatis.com/francia/paris/galeria/torre-eiffel-altura.jpg">
+                    <h2>Paris, França</h2>
                 </div>
-                <div class="cards-cardIten" data-aos="flip-left">
-                    <div class="cards-cardIten-NoHover animate__animated animate__fadeIn">
-                        <h2>Título do card</h2>
-                        <p>Aqui vai a descrição do nosso card</p>
-                    </div>
-                    <div class="cards-cardIten-Hover animate__animated animate__fadeIn">
-                        <p>Agora, aqui tem um aprofundamento maior sobre o conteúdo do nosso card. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero. Quaerat distinctio, odit ratione cupiditate hic debitis officia.</p>
-                    </div>
+                <div class="cards-cardIten-Hover animate__animated animate__fadeIn">
+                    <h2>Paris, França</h2>
+                    <p><b>Pacote Paris do Sonhos:</b>  Viva a magia da Cidade Luz com nosso pacote exclusivo! Inclui passagens aéreas de ida e volta, hospedagem em hotel 4 estrelas no coração de Paris, café da manhã diário, e um passeio guiado pelos principais pontos turísticos, como a Torre Eiffel, o Louvre e a Catedral de Notre-Dame. Desfrute de um cruzeiro romântico pelo Rio Sena e tenha um dia inesquecível explorando os charmosos bairros de Montmartre e Le Marais. Além disso, oferecemos um dia livre para explorar a cidade ao seu ritmo. Reserve agora e transforme seus sonhos em realidade!</p>
                 </div>
-                <div class="cards-cardIten" data-aos="flip-left">
-                    <div class="cards-cardIten-NoHover animate__animated animate__fadeIn">
-                        <h2>Título do card</h2>
-                        <p>Aqui vai a descrição do nosso card</p>
-                    </div>
-                    <div class="cards-cardIten-Hover animate__animated animate__fadeIn">
-                        <p>Agora, aqui tem um aprofundamento maior sobre o conteúdo do nosso card. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero. Quaerat distinctio, odit ratione cupiditate hic debitis officia.</p>
-                    </div>
+            </div>
+            <div class="cards-cardIten" data-aos="flip-down">
+                <div class="cards-cardIten-NoHover animate__animated animate__fadeIn">
+                    <img src="https://www.civitatis.com/blog/wp-content/uploads/2023/03/miradores-nueva-york.jpg">
+                    <h2>Nova York, Estados Unidos</h2>
                 </div>
-            </section>
+                <div class="cards-cardIten-Hover animate__animated animate__fadeIn">
+                    <h2>Nova York, Estados Unidos</h2>
+                    <p><b>Pacote Nova York Inesquecível:</b> Mergulhe na energia vibrante da cidade que nunca dorme com nosso pacote exclusivo! Inclui passagens aéreas de ida e volta, hospedagem em hotel 4 estrelas em Manhattan, café da manhã diário, e um passeio guiado pelos principais pontos turísticos, como a Estátua da Liberdade, o Central Park e o Empire State Building. Desfrute de um espetáculo da Broadway e explore os museus mundialmente famosos, como o MoMA e o Museu de História Natural. Além disso, oferecemos um dia livre para fazer compras na Quinta Avenida ou descobrir os charmosos bairros de Nova York ao seu ritmo. Reserve agora e viva a experiência nova-iorquina dos seus sonhos!</p>
+                </div>
+            </div>
+            <div class="cards-cardIten" data-aos="flip-down">
+                <div class="cards-cardIten-NoHover animate__animated animate__fadeIn">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwYimhgnYUC6eqVDbQare3yFswhXPpsdf2Dw&s">
+                    <h2>Gênova, Itália</h2>
+                </div>
+                <div class="cards-cardIten-Hover animate__animated animate__fadeIn">
+                    <h2>Gênova, Itália</h2>
+                    <p><b>Pacote Gênova Encantadora:</b> Descubra o charme histórico e a beleza costeira de Gênova com nosso pacote exclusivo! Inclui passagens aéreas de ida e volta, hospedagem em hotel 4 estrelas no centro histórico, café da manhã diário, e um passeio guiado pelos principais pontos turísticos, como o Porto Antico, a Catedral de San Lorenzo e o Palácio Ducal. Desfrute de um passeio de barco pela costa da Ligúria e explore os encantadores becos e praças da cidade. Além disso, oferecemos um dia livre para visitar o famoso Aquário de Gênova ou degustar a deliciosa culinária local. Reserve agora e viva uma experiência inesquecível na Riviera Italiana!
+                </div>
+            </div>
+            <div class="cards-cardIten" data-aos="flip-down">
+                <div class="cards-cardIten-NoHover animate__animated animate__fadeIn">
+                    <img src="Img/download.jpg">
+                    <h2>Rio de Janeiro, Brasil</h2>
+                </div>
+                <div class="cards-cardIten-Hover animate__animated animate__fadeIn">
+                    <h2>Rio de Janeiro, Brasil</h2>
+                    <p><b>Pacote Rio de Janeiro Maravilhoso:</b> Experimente a vibrante energia do Rio de Janeiro com nosso pacote exclusivo! Inclui passagens aéreas de ida e volta, hospedagem em hotel 4 estrelas em Copacabana, café da manhã diário, e um passeio guiado pelos principais pontos turísticos, como o Cristo Redentor, o Pão de Açúcar e a Praia de Ipanema. Desfrute de uma visita ao Jardim Botânico e um passeio de barco pela Baía de Guanabara. Além disso, oferecemos um dia livre para explorar os bairros históricos de Santa Teresa e Lapa ao seu ritmo. Reserve agora e viva a experiência carioca dos seus sonhos!</p>
+                </div>
+            </div>
+            <div class="cards-cardIten" data-aos="flip-down">
+                <div class="cards-cardIten-NoHover animate__animated animate__fadeIn">
+                    <img src="Img/download (1).jpg">
+                    <h2>Tóquio, Japão</h2>
+                </div>
+                <div class="cards-cardIten-Hover animate__animated animate__fadeIn">
+                    <h2>Tóquio, Japão</h2>
+                    <p><b>Pacote Tóquio Fascinante:</b> Mergulhe na cultura vibrante e na modernidade de Tóquio com nosso pacote exclusivo! Inclui passagens aéreas de ida e volta, hospedagem em hotel 4 estrelas no bairro de Shinjuku, café da manhã diário, e um passeio guiado pelos principais pontos turísticos, como a Torre de Tóquio, o Templo Senso-ji e o Palácio Imperial. Desfrute de uma experiência gastronômica única com um jantar tradicional japonês e explore os animados distritos de Akihabara e Harajuku. Além disso, oferecemos um dia livre para fazer compras em Ginza ou visitar o famoso mercado de peixes de Tsukiji. Reserve agora e descubra a magia de Tóquio!</p>
+                </div>
+            </div>
+            <div class="cards-cardIten" data-aos="flip-down">
+                <div class="cards-cardIten-NoHover animate__animated animate__fadeIn">
+                    <img src="Img/download (2).jpg">
+                    <h2>Paris, França</h2>
+                </div>
+                <div class="cards-cardIten-Hover animate__animated animate__fadeIn">
+                    <h2>Veneza, Itália</h2>
+                    <p><b>Pacote Veneza Romântica:</b> Explore a beleza e o encanto de Veneza com nosso pacote exclusivo! Inclui passagens aéreas de ida e volta, hospedagem em hotel 4 estrelas próximo à Praça de São Marcos, café da manhã diário, e um passeio guiado pelos principais pontos turísticos, como a Basílica de São Marcos, o Palácio Ducal e a Ponte de Rialto. Desfrute de um passeio de gôndola pelos canais pitorescos e descubra a arte e a história nos museus venezianos. Além disso, oferecemos um dia livre para explorar as ilhas de Murano e Burano ao seu ritmo. Reserve agora e viva a magia de Veneza!</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <h2>Logo Teste</h2>
+        <h2>Fic/Travel</h2>
         <h3>Rodapé da página</h3>
     </footer>
 
