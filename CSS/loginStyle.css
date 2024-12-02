@@ -1,0 +1,26 @@
+.login{
+    padding-top: 300px; padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-loginCard{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    text-align: center;
+    overflow: auto;
+    padding: 20px;
+}
+.login-loginCard form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-loginCard h2{
+    font-size: 30px;
+}
+.login-loginCard label{
+    margin: 15px;
+}

@@ -1,0 +1,240 @@
+@font-face {
+    font-family: LogoFont;
+    src: url(../Fonts/apayah-loe.regular.ttf);
+}
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-flow: column wrap;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1 1 0;
+}
+
+/*========================================================================================================================================
+Menu de navegação*/
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    z-index: 1;
+    background-color: white;
+}
+
+/*Maneu de navegação - Links*/
+.nav-links{
+    text-align: right;
+    flex: 80%;
+}
+.nav-links a{
+    color: black; text-decoration: none;
+    font-size: 25px;
+}
+.nav-links a:hover{
+    text-decoration:underline 2px;
+}
+
+.nav-links-login{
+    margin: 40px;
+    background-color: #1780c3;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav-links-login:hover{
+    background-color: #95cff1;
+    padding: 15px;
+    color: white;
+}
+
+/*Maneu de navegação - Logo*/
+.nav-logo{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 5px;
+    flex: 20%;
+}
+.nav-logo p{
+    display: inline-block;
+    font-family: LogoFont;
+    color: #1780c3;
+    margin-left: 20px;
+}
+@media screen and (max-width: 550px){
+    nav{
+        padding-bottom: 10px;
+    }
+    .nav-links, .nav-logo{
+        flex: 100%;
+        text-align: center;
+    }
+    .nav-links a{
+        margin: 10px;
+        font-size: 15px;
+    }
+    .nav-logo p{
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+/*========================================================================================================================================*/
+/*========================================================================================================================================
+Cabeçalho e título*/
+
+header{
+    padding-top: 200px; padding-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+/*Cabeçalho e título - Texto de título*/
+.header-title{
+    flex: 50%;
+    text-align: center;
+}
+.header-title h1{
+    font-size: 70px;
+    margin: 0;
+    width: 50%; margin-left: 25%;
+    color: #1780c3;
+    text-shadow: #2e2948 0px 10px 20px, #2e2948 0px 6px 6px;
+}
+.header-title p{
+    color: gray;
+    width: 60%; margin-left: 20%;
+    font-size: 20px;
+}
+.header-title a{
+    background-color: #1780c3;
+    padding: 20px;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.header-title a:hover{
+    padding: 25px;
+    background-color: #95cff1;
+    font-size: 40px;
+}
+
+/*Cabeçalho e título - Ilustração*/
+.header-ilustration{
+    flex: 50%;
+}
+.header-ilustration img{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+@media screen and (max-width: 550px){
+    header{
+        margin-top: 100px;
+    }
+    .header-ilustration, .header-title{
+        flex: 100%;
+    }
+}
+/*========================================================================================================================================*/
+/*========================================================================================================================================
+Seção 1: Cards*/
+
+.cards{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-flow: row wrap;
+    overflow: auto;
+    color: gray;
+}
+
+.cards-cardIten{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: #210d1f solid 3px;
+    text-align: center;
+    margin: 35px;
+}
+.cards-cardIten h2{
+    font-size: 30px;
+}
+.cards-cardIten p{
+    font-size: 20px;
+    max-width: 250px;
+}
+
+.cards-cardIten:hover .cards-cardIten-Hover{
+    display: block;
+}
+.cards-cardIten:hover .cards-cardIten-NoHover{
+    display: none;
+}
+.cards-cardIten-Hover{
+    background-color: #ed3773;
+    display: none;
+    color: white;
+}
+.cards-cardIten-Hover p{
+    margin: 0;
+    padding: 5px;
+}
+@media screen and (max-width: 550px){
+    .cards-cardIten{
+        flex: 100%;
+    }
+}
+
+
+footer{
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(#ed3773, #250521);
+    text-align: center;
+    border-top: #210d1f solid 7px;
+}
+
+footer h2{
+    font-size: 50px;
+    font-family: LogoFont;
+    margin: 0;
+    color: #1780c3;
+    letter-spacing: 10px;
+}
+
+footer h3{
+    color: white;
+    font-size: 30px;
+}
+@media screen and (max-width: 550px){
+    footer h2{
+        font-size: 40px;
+    }
+    footer h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    footer h2{
+        font-size: 40px;
+    }
+    footer h3{
+        font-size: 20px;
+    }
+}
